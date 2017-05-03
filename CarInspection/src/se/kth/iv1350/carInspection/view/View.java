@@ -29,7 +29,7 @@ public class View {
      * Calls all system operations and prints the result to <code>System.out</code>.
      */	
 	public void start()	{           
-        String passedInspection = "passed";
+        String passedInspection = "Passed";
         int checklistIndex;
 		String regNo = "ABC123";
 		int pin = 1234;

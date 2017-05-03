@@ -37,6 +37,7 @@ public class InspectionResult {
 	 * @param passedInspection
 	 * @param checklistIndex
 	 */
+	
 	public void handleInspectionResult(String passedInspection, int checklistIndex){            
 		int noOfInspections = inspectionList.size()-1;
 		databaseManager.saveInspectionResult(passedInspection, checklistIndex);
@@ -51,11 +52,12 @@ public class InspectionResult {
 	 * Converts the inspection result to a string.
 	 * @return the result as a string.
 	 */
+	
 	public String toString(){
 		StringBuilder result = new StringBuilder ("Registration number: " + regNo);
 		for(int i=0; i<inspectionList.size(); i++)
 			result.append("\n" + this.inspectionList.get(i).getVehiclePart() + "  " + this.inspectionList.get(i).getInspectionResult());
                 
             return result.toString();
-        }      
+    }      
 }
