@@ -1,30 +1,28 @@
 package se.kth.iv1350.carInspection.integration;
 
 import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class InspectionItemTest {
-    
-    @Test
-    public void testUpdatedInspectionResult() {
-    	InspectionItem expResult = new InspectionItem("Brakes", 105, "Passed");
-    	InspectionItem testResult = new InspectionItem("Brakes", 105, "Failed");
-    	
-    	testResult.updateResult("Passed");
-    	
-    	assertEquals("The inspection result was not updated: ", expResult, testResult);
-       
-    }
-    
-    @Test
-    public void testUpdatedNullResult() {
-    	InspectionItem expResult = new InspectionItem("Brakes", 105, null);
-    	InspectionItem testResult = new InspectionItem("Brakes", 105, "Failed");
-    	
-    	testResult.updateResult(null);
-    	
-    	assertEquals("The inspection result was not updated: ", expResult, testResult);
-       
-    }
+
+	@Test
+	public void testUpdateInspectionResult() {
+	
+	    InspectionItem expResult = new InspectionItem("Brakes", 105, "InspectionResult");
+	    InspectionItem testResult = new InspectionItem("Brakes", 105, "Failed");
+	    testResult.updateResult("InspectionResult");
+	    assertEquals("Inspection result was not updated", expResult, testResult);
+	}
+	
+	@Test
+	public void testUpdateNullResult() {
+	
+	    InspectionItem expResult = new InspectionItem("Brakes", 105, null);
+	    InspectionItem testResult = new InspectionItem("Brakes", 105, "Failed");
+	    testResult.updateResult(null);
+	    assertEquals("Inspection result was null", expResult, testResult);
+	}
 
 }

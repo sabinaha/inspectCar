@@ -13,6 +13,7 @@ public class CreditCardReader {
 	private Printer printer;
 	private PaymentAuthorization paymentAuthorization;
 	
+	
 	/**
 	 * Creates a new instance of a credit card reader.
 	 */

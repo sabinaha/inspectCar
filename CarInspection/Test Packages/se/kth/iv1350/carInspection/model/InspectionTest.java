@@ -1,7 +1,6 @@
 package se.kth.iv1350.carInspection.model;
 
 import se.kth.iv1350.carInspection.integration.*;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

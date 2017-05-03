@@ -11,7 +11,6 @@ import org.junit.Test;
 public class DatabaseManagerTest {
 
    private DatabaseManager databaseManager;
-   private List<InspectionItem> inspectionList;
 
    @Before
    public void setUp() {
@@ -43,5 +42,4 @@ public class DatabaseManagerTest {
            assertEquals("Wrong inspection list: ", expResult.get(i), inspectionList.get(i));
        }
    }
-
 }

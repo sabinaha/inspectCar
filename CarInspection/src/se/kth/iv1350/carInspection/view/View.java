@@ -1,7 +1,7 @@
 package se.kth.iv1350.carInspection.view;
 
 import java.util.List;
-import se.kth.iv1350.carInspection.model.*;
+import se.kth.iv1350.carInspection.model.Amount;
 import se.kth.iv1350.carInspection.controller.Controller;
 import se.kth.iv1350.carInspection.integration.*;
 
@@ -29,7 +29,7 @@ public class View {
      * Calls all system operations and prints the result to <code>System.out</code>.
      */	
 	public void start()	{           
-        String passedInspection = "Passed";
+        String passedInspection = "passed";
         int checklistIndex;
 		String regNo = "ABC123";
 		int pin = 1234;
